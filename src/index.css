@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Roboto';
+  src: url('/src/assets/fonts/Roboto.ttf') format('ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Heuristica';
+  src: url('/src/assets/fonts/Heuristica-Regular.otf') format('otf');
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--grey);  
+}
+
+:root {
+  --white: #fff;
+  --black: #000000;
+  --grey: #EBF3FF;
+}
+
+/* телефон и планшет */
+/* @media (max-width: 959px) {
+
+} */
