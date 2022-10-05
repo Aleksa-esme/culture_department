@@ -3,8 +3,8 @@ import { navLinks } from './data';
 import styles from './header.module.css';
 
 export const Header = () => {
-  const cnButton = classNames("dropdown", styles.menuButton);
-  const cnDropdown = classNames("dropdown-menu", styles.dropdownMenu);
+  const cnButton = classNames('dropdown', styles.menuButton);
+  const cnDropdown = classNames('dropdown-menu', styles.dropdownMenu);
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
@@ -16,7 +16,12 @@ export const Header = () => {
           ))}
         </nav>
         <div className={cnButton}>
-          <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button
+            className="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             Меню
           </button>
           <ul className={cnDropdown}>

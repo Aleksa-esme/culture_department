@@ -10,7 +10,9 @@ export const Filter = ({ name, title, options, filterFunc }) => {
         className={styles.input}
         aria-label={name}
       >
-        <option className={styles.option} value="All">{title}</option>
+        <option className={styles.option} value="All">
+          {title}
+        </option>
         {options.map((option) => (
           <option key={option} className={styles.option} value={option}>
             {option}
