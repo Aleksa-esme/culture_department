@@ -53,8 +53,12 @@
   .contentHeader {
     align-items: flex-start;
     flex-direction: column;
+    gap: 10px;
   }
   .lightText {
     padding-bottom: unset;
+  }
+  .filters {
+    padding: 16px 0 30px;
   }
 }
