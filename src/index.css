@@ -18,11 +18,14 @@ body {
   background: var(--light-grey);
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: unset !important;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: unset !important;
   margin-bottom: unset !important;
 }
@@ -49,7 +52,5 @@ p {
   --min-container-width: 320px;
 }
 
-
 @media (max-width: 959px) {
-
 }

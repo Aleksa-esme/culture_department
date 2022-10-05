@@ -14,11 +14,11 @@
   font: 400 16px/19px 'Roboto';
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
-.input svg{
-  fill: var(--blue)
+.input svg {
+  fill: var(--blue);
 }
 
 .input:focus {

@@ -20,28 +20,18 @@ const text = [
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterParam, setFilterParam] = useState(['All']);
-  const [searchParam] = useState(["title"]);
+  const [searchParam] = useState(['title']);
 
   function search(items) {
     return items.filter((item) => {
       if (item.region == filterParam) {
         return searchParam.some((newItem) => {
-          return (
-            item[newItem]
-              .toString()
-              .toLowerCase()
-              .includes(searchTerm.toLowerCase())
-          );
+          return item[newItem].toString().toLowerCase().includes(searchTerm.toLowerCase());
         });
-      } else if (filterParam == "All") {
-          return searchParam.some((newItem) => {
-            return (
-              item[newItem]
-                .toString()
-                .toLowerCase()
-                .includes(searchTerm.toLowerCase())
-            );
-          });
+      } else if (filterParam == 'All') {
+        return searchParam.some((newItem) => {
+          return item[newItem].toString().toLowerCase().includes(searchTerm.toLowerCase());
+        });
       }
     });
   }
@@ -54,7 +44,12 @@ function App() {
           <Text text={text[0]} size="big" />
           <Search title="Поиск" />
         </section>
-        <FilterSection text={text[1]} data={CARDS} searchFunc={setSearchTerm} filterFunc={setFilterParam} />
+        <FilterSection
+          text={text[1]}
+          data={CARDS}
+          searchFunc={setSearchTerm}
+          filterFunc={setFilterParam}
+        />
         <CardsSection data={search(CARDS)} />
         <Pagination />
       </main>
