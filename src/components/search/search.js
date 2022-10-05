@@ -13,7 +13,9 @@ export const Search = ({ title, size = 'big', searchFunc }) => {
           className={styles.searchInput}
           type="text"
           placeholder={title}
-          onChange={searchFunc}
+          onChange={(e) => {
+            searchFunc(e.target.value);
+          }}
         />
         <button className={styles.searchButton}>
           <SearchIcon />
