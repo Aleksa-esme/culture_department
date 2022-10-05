@@ -14,3 +14,8 @@
   grid-gap: 16px;
   grid-template-columns: auto auto auto;
 }
+
+.text {
+  color: var(--light-text);
+  font: 400 14px/16px 'Roboto';
+}
