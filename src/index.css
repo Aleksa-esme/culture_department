@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('/src/assets/fonts/Roboto.ttf') format('ttf');
+  font-family: Roboto;
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Heuristica';
-  src: url('/src/assets/fonts/Heuristica-Regular.otf') format('otf');
+  font-family: Heuristica;
+  src: url('./assets/fonts/Heuristica-Regular.otf') format('opentype');
 }
 
 * {
@@ -15,16 +15,26 @@
 }
 
 body {
-  background: var(--grey);  
+  background: var(--light-grey);
 }
 
 :root {
   --white: #fff;
-  --black: #000000;
-  --grey: #EBF3FF;
+  --black: #000;
+  --light-grey: #ebf3ff;
+  --grey: #8791aa;
+  --dark-grey: #495057;
+  --blue: #264576;
+  --light-blue: #1e82fa;
+  --shadow: rgb(100 177 252 / 30%);
+  --focus: rgb(0 123 255 / 25%);
+  --light-text: rgb(25 25 25 / 50%);
+  --max-container-width: 1100px;
+  --min-container-width: 320px;
 }
 
 /* телефон и планшет */
+
 /* @media (max-width: 959px) {
 
 } */

@@ -1,0 +1,16 @@
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity {
+  margin: 40px 0;
+  color: var(--light-text);
+  font: 400 14px/16px 'Roboto';
+}
+
+.cards {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: auto auto auto;
+}
