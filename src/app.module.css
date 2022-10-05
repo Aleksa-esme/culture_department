@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  width: 100%;
+  min-width: var(--min-container-width);
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: var(--max-container-width);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nameSection {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin: 40px 0;
+}

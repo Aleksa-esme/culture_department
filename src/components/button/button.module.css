@@ -1,0 +1,14 @@
+.button {
+  padding: 16px 80px;
+  border: unset;
+  border-radius: 100px;
+  background: var(--light-blue);
+  color: var(--white);
+  cursor: pointer;
+  font: 500 16px/19px 'Roboto';
+}
+
+.button:focus {
+  box-shadow: 0 0 0 0.2rem var(--focus);
+  outline: 0;
+}

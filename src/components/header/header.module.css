@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: var(--white);
+}
+
+.headerContent {
+  display: flex;
+  width: 100%;
+  max-width: var(--max-container-width);
+}
+
+.navLinks {
+  display: flex;
+  padding: 10px 0;
+}
+
+.navLink {
+  padding-right: 20px;
+  color: var(--blue);
+  font: 400 14px/16px 'Roboto';
+  text-decoration: none;
+}
+
+.navLink:focus {
+  background-color: var(--white);
+  box-shadow: 0 0 0 0.2rem var(--focus);
+  color: var(--dark-grey);
+  outline: 0;
+}

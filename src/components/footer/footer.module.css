@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: var(--max-container-width);
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.building {
+  display: flex;
+  align-items: center;
+}
+
+.building svg {
+  align-self: center;
+  margin-right: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
