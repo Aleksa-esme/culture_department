@@ -1,21 +1,9 @@
 {
   "files": {
-    "main.css": "/culture_department/static/css/main.b5c679ee.css",
-    "main.js": "/culture_department/static/js/main.a2b6c920.js",
-    "static/media/6.webp": "/culture_department/static/media/6.b38ebda1a5394c242647.webp",
-    "static/media/4.webp": "/culture_department/static/media/4.de307bfa9c2491af2d54.webp",
-    "static/media/12.webp": "/culture_department/static/media/12.bc36ba6ba1a241c46b22.webp",
-    "static/media/3.webp": "/culture_department/static/media/3.4c78af6d4af3ceaa7802.webp",
-    "static/media/2.webp": "/culture_department/static/media/2.3439561cd24d801f4741.webp",
-    "static/media/5.webp": "/culture_department/static/media/5.7f13c467d5a75cba543a.webp",
-    "static/media/9.webp": "/culture_department/static/media/9.82a802fdbccd464d29ea.webp",
-    "static/media/7.webp": "/culture_department/static/media/7.201e6a1ca8ea9dfeaa6c.webp",
+    "main.css": "/culture_department/static/css/main.b047e352.css",
+    "main.js": "/culture_department/static/js/main.9c3e5500.js",
     "static/media/Heuristica-Regular.otf": "/culture_department/static/media/Heuristica-Regular.fe4bc41e836075a9a518.otf",
-    "static/media/11.webp": "/culture_department/static/media/11.7b273c315dd1efce440f.webp",
     "static/media/Roboto-Regular.ttf": "/culture_department/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
-    "static/media/10.webp": "/culture_department/static/media/10.a0a4e9438f3e3cf2544c.webp",
-    "static/media/1.webp": "/culture_department/static/media/1.cc7ea6b029f6d23caa4e.webp",
-    "static/media/8.webp": "/culture_department/static/media/8.2197039b0a2a3167961c.webp",
     "static/media/building.svg": "/culture_department/static/media/building.7e8e911998cbf6f46db000829f94a5cf.svg",
     "static/media/committee.webp": "/culture_department/static/media/committee.bc43c6c9108b0939abb0.webp",
     "static/media/location_thin.svg": "/culture_department/static/media/location_thin.3db424d003d1576ecc74816f122e6cf3.svg",
@@ -28,11 +16,11 @@
     "static/media/play.svg": "/culture_department/static/media/play.5d2135f7d8392e4b43ce9a9159831ae9.svg",
     "static/media/arrow.svg": "/culture_department/static/media/arrow.550810f149d7802b17d75b29ba9f731a.svg",
     "static/media/menu_arrow.svg": "/culture_department/static/media/menu_arrow.cea09aa67848cc0b7849.svg",
-    "main.b5c679ee.css.map": "/culture_department/static/css/main.b5c679ee.css.map",
-    "main.a2b6c920.js.map": "/culture_department/static/js/main.a2b6c920.js.map"
+    "main.b047e352.css.map": "/culture_department/static/css/main.b047e352.css.map",
+    "main.9c3e5500.js.map": "/culture_department/static/js/main.9c3e5500.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5c679ee.css",
-    "static/js/main.a2b6c920.js"
+    "static/css/main.b047e352.css",
+    "static/js/main.9c3e5500.js"
   ]
 }
