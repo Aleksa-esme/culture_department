@@ -37,7 +37,7 @@ export const FilterSection = ({ text, searchFunc, data, filterFunc }) => {
         </div>
         <div className={styles.filters}>
           {filters.map(({ list, name, title, options }) => (
-            <Filter key={list} list={list} name={name} title={title} options={options} filterFunc={filterFunc} />
+            <Filter key={list} name={name} title={title} options={options} filterFunc={filterFunc} />
           ))}
         </div>
         <Button />

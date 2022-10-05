@@ -1,51 +1,33 @@
-.filter {
-  position: relative;
-}
-
-datalist {
-  position: absolute;
-  z-index: 10;
-  top: 38px;
-  width: 100px;
-  max-height: 120px;
-  border: 0 none;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-datalist option {
-  padding: 6px;
-  background-color: var(--white);
-  background-color: blue;
-  color: var(--grey);
-  cursor: pointer;
-  font: 400 16px/19px 'Roboto';
-}
-
-/* option active styles */
-datalist option:hover,
-datalist option:focus {
-  background-color: #036;
-  color: var(--white);
-  outline: 0 none;
-}
-
 .input {
   display: flex;
   width: 100%;
-  max-width: 340px;
   height: 35px;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 22px 0 16px;
   border: unset;
   border-radius: 20px;
-  background: var(--white);
+  background: url('../../../assets/svg/menu_arrow.svg') no-repeat right var(--white);
+  -webkit-appearance: none;
+  background-position-x: calc(100% - 16px);
   box-shadow: 0 4px 7px var(--shadow);
   color: var(--grey);
   font: 400 16px/19px 'Roboto';
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.input svg{
+  fill: var(--blue)
 }
 
 .input:focus {
   box-shadow: 0 0 0 0.2rem var(--focus);
   outline: 0;
+}
+
+.option {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

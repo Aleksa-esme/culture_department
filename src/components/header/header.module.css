@@ -9,11 +9,11 @@
   display: flex;
   width: 100%;
   max-width: var(--max-container-width);
+  padding: 10px 0;
 }
 
 .navLinks {
   display: flex;
-  padding: 10px 0;
 }
 
 .navLink {
@@ -28,4 +28,53 @@
   box-shadow: 0 0 0 0.2rem var(--focus);
   color: var(--dark-grey);
   outline: 0;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .headerContent {
+    max-width: var(--container-width);
+  }
+}
+
+@media (max-width: 992px) {
+  .headerContent {
+    max-width: var(--medium-container-width);
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    max-width: 100%;
+    padding: 10px 16px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .menuButton button {
+    background-color: transparent;
+    color: var(--blue);
+    font: 400 14px/16px 'Roboto';
+    border: unset;
+  }
+
+  .menuButton button:hover {
+    background-color: transparent;
+    color: var(--blue);
+  }
+
+  .menuElement {
+    padding: 10px;
+    color: var(--blue);
+    font: 400 14px/16px 'Roboto';
+  }
 }

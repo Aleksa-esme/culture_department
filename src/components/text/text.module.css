@@ -16,3 +16,19 @@
 .big {
   font: 400 20px/24px 'Heuristica';
 }
+
+@media (max-width: 992px) {
+  .small {
+    font: 400 12px/14px 'Heuristica';
+    text-align: center;
+  }
+  
+  .medium {
+    font: 400 14px/17px 'Heuristica';
+    text-align: center;
+  }
+  
+  .big {
+    font: 400 16px/20px 'Heuristica';
+  }
+}
