@@ -1,6 +1,5 @@
 .card {
   width: 100%;
-  max-width: 356px;
   border-radius: 16px;
   background: var(--white);
 }

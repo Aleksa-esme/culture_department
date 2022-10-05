@@ -18,6 +18,20 @@ body {
   background: var(--light-grey);
 }
 
+ol, ul {
+  padding-left: unset !important;
+}
+
+dl, ol, ul {
+  margin-top: unset !important;
+  margin-bottom: unset !important;
+}
+
+p {
+  margin-top: unset !important;
+  margin-bottom: unset !important;
+}
+
 :root {
   --white: #fff;
   --black: #000;
@@ -30,11 +44,12 @@ body {
   --focus: rgb(0 123 255 / 25%);
   --light-text: rgb(25 25 25 / 50%);
   --max-container-width: 1100px;
+  --container-width: 930px;
+  --medium-container-width: 690px;
   --min-container-width: 320px;
 }
 
-/* телефон и планшет */
 
-/* @media (max-width: 959px) {
+@media (max-width: 959px) {
 
-} */
+}
