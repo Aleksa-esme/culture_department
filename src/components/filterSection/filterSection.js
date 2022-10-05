@@ -2,25 +2,29 @@ import { Text } from '../text/text';
 import { Search } from '../search/search';
 import { Filter } from './filter/filter';
 import { Button } from '../button/button';
-import { cards } from '../../db';
 
 import styles from './filterSection.module.css';
 
-const getRegions = (array) => {
-  const regions = array.map((el) => el.region);
-  return [...new Set(regions.sort())];
+const getUniqueList = (array, prop) => {
+  const newArray = array.map((el) => el[prop]);
+  return [...new Set(newArray.sort())];
 };
 
-const filters = [
-  { list: 'ethnic', name: 'ethnic-choice', title: 'Все этносы', options: [] },
-  { list: 'category', name: 'category-choice', title: 'Все категории', options: [] },
-  { list: 'region', name: 'region-choice', title: 'Все регионы', options: getRegions(cards) },
-  { list: 'language', name: 'language-choice', title: 'Все языки', options: [] },
-  { list: 'tag', name: 'tag-choice', title: 'Все теги', options: [] },
-  { list: 'author', name: 'author-choice', title: 'Все авторы', options: [] },
-];
+export const FilterSection = ({ text, searchFunc, data }) => {
+  const filters = [
+    { list: 'ethnic', name: 'ethnic-choice', title: 'Все этносы', options: [] },
+    { list: 'category', name: 'category-choice', title: 'Все категории', options: [] },
+    {
+      list: 'region',
+      name: 'region-choice',
+      title: 'Все регионы',
+      options: getUniqueList(data, 'region'),
+    },
+    { list: 'language', name: 'language-choice', title: 'Все языки', options: [] },
+    { list: 'tag', name: 'tag-choice', title: 'Все теги', options: [] },
+    { list: 'author', name: 'author-choice', title: 'Все авторы', options: [] },
+  ];
 
-export const FilterSection = ({ text }) => {
   return (
     <section className={styles.filterSection}>
       <div className={styles.content}>
@@ -29,7 +33,7 @@ export const FilterSection = ({ text }) => {
             <p className={styles.lightText}>Главная</p>
             <Text text={text} />
           </div>
-          <Search title="Контекстный поиск" size="small" />
+          <Search title="Контекстный поиск" size="small" searchFunc={searchFunc} />
         </div>
         <div className={styles.filters}>
           {filters.map(({ list, name, title, options }) => (
