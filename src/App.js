@@ -19,18 +19,32 @@ const text = [
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [filterParam, setFilterParam] = useState(['All']);
+  const [searchParam] = useState(["title"]);
 
-  const filterElements = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const filteredByTitle = CARDS.filter((el) => {
-    if (searchTerm === '') {
-      return el;
-    } else if (el.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())) {
-      return el;
-    }
-  });
+  function search(items) {
+    return items.filter((item) => {
+      if (item.region == filterParam) {
+        return searchParam.some((newItem) => {
+          return (
+            item[newItem]
+              .toString()
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase())
+          );
+        });
+      } else if (filterParam == "All") {
+          return searchParam.some((newItem) => {
+            return (
+              item[newItem]
+                .toString()
+                .toLowerCase()
+                .includes(searchTerm.toLowerCase())
+            );
+          });
+      }
+    });
+  }
 
   return (
     <div className={styles.app}>
@@ -40,8 +54,8 @@ function App() {
           <Text text={text[0]} size="big" />
           <Search title="Поиск" />
         </section>
-        <FilterSection text={text[1]} searchFunc={filterElements} data={CARDS} />
-        <CardsSection data={filteredByTitle} />
+        <FilterSection text={text[1]} data={CARDS} searchFunc={setSearchTerm} filterFunc={setFilterParam} />
+        <CardsSection data={search(CARDS)} />
         <Pagination />
       </main>
       <Footer />

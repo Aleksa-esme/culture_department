@@ -10,7 +10,7 @@ const getUniqueList = (array, prop) => {
   return [...new Set(newArray.sort())];
 };
 
-export const FilterSection = ({ text, searchFunc, data }) => {
+export const FilterSection = ({ text, searchFunc, data, filterFunc }) => {
   const filters = [
     { list: 'ethnic', name: 'ethnic-choice', title: 'Все этносы', options: [] },
     { list: 'category', name: 'category-choice', title: 'Все категории', options: [] },
@@ -37,7 +37,7 @@ export const FilterSection = ({ text, searchFunc, data }) => {
         </div>
         <div className={styles.filters}>
           {filters.map(({ list, name, title, options }) => (
-            <Filter key={list} list={list} name={name} title={title} options={options} />
+            <Filter key={list} list={list} name={name} title={title} options={options} filterFunc={filterFunc} />
           ))}
         </div>
         <Button />
