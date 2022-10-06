@@ -69,11 +69,11 @@
 }
 
 .page a:visited {
-  color: unset;
+  color: var(--grey);
 }
 
 .page a:active {
-  color: unset;
+  color: var(--grey);
 }
 
 .page:last-child {
@@ -83,5 +83,13 @@
 .activePage {
   background: #fff;
   box-shadow: 0 4px 7px rgb(100 177 252 / 30%);
+  color: var(--blue);
+}
+
+.activePage a:active {
+  color: var(--blue);
+}
+
+.activePage a:visited {
   color: var(--blue);
 }
