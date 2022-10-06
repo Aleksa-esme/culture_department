@@ -20,19 +20,29 @@ body {
 
 ol,
 ul {
-  padding-left: unset !important;
+  padding-left: unset;
 }
 
 dl,
 ol,
 ul {
-  margin-top: unset !important;
-  margin-bottom: unset !important;
+  margin-top: unset;
+  margin-bottom: unset;
 }
 
 p {
-  margin-top: unset !important;
-  margin-bottom: unset !important;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+img, svg {
+  vertical-align: unset;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: unset;
+  font-size: unset;
+  line-height: unset;
 }
 
 :root {

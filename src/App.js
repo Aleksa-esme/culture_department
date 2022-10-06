@@ -1,4 +1,4 @@
-import CARDS from './cards.json';
+import { cards } from './db';
 import { useState } from 'react';
 import { Header } from './components/header/header';
 import { Text } from './components/text/text';
@@ -46,11 +46,11 @@ function App() {
         </section>
         <FilterSection
           text={text[1]}
-          data={CARDS}
+          data={cards}
           searchFunc={setSearchTerm}
           filterFunc={setFilterParam}
         />
-        <CardsSection data={search(CARDS)} />
+        <CardsSection data={search(cards)} />
         <Pagination />
       </main>
       <Footer />
